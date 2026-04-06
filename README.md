@@ -15,6 +15,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![PyPI](https://img.shields.io/pypi/v/exectrace-workflow.svg)](https://pypi.org/project/exectrace-workflow/#description)
 [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20macOS-purple.svg)](#)
 
 </div>
