@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "exectrace"
+name = "exectrace-workflow"
 version = "1.0.0"
 description = "Record and replay developer workflows including terminal commands and file system changes"
 readme = "README.md"
