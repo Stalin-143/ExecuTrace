@@ -42,8 +42,64 @@ ExecuTrace is a Python library and CLI tool that captures developer workflows an
 
 ## Installation
 
+### From PyPI (Global Library)
 ```bash
+# Install globally from PyPI
 pip install exectrace
+
+# Verify installation
+exectrace --help
+```
+
+### From Source (Development)
+```bash
+git clone https://github.com/Stalin-143/ExecuTrace.git
+cd ExecuTrace
+pip install -e .
+```
+
+---
+
+## Publishing to PyPI
+
+To publish ExecuTrace as a Python package to PyPI:
+
+### Prerequisites
+```bash
+pip install build twine
+```
+
+### Build the Package
+```bash
+python -m build
+```
+
+This creates:
+- `dist/exectrace-1.0.0.tar.gz` (source distribution)
+- `dist/exectrace-1.0.0-py3-none-any.whl` (wheel)
+
+### Upload to PyPI
+```bash
+# Upload to official PyPI (requires PyPI account)
+twine upload dist/*
+
+# Or test upload first
+twine upload -r testpypi dist/*
+```
+
+### PyPI Account Setup
+1. Create account at https://pypi.org/account/register/
+2. Generate API token at https://pypi.org/manage/account/token/
+3. Create `~/.pypirc`:
+```
+[distutils]
+index-servers =
+    pypi
+
+[pypi]
+repository = https://upload.pypi.org/legacy/
+username = __token__
+password = pypi_YOUR_TOKEN_HERE
 ```
 
 ---
